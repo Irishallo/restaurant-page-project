@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page-project",
+  "version": "1.0.0",
+  "description": "this is a project from the odin project. the goal is to make a restaurant page with javascript, using dom manipulation and webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irishallo/restaurant-page-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Irishallo/restaurant-page-project/issues"
+  },
+  "homepage": "https://github.com/Irishallo/restaurant-page-project#readme",
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
