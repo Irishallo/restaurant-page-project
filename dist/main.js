@@ -1,1 +1,1 @@
-console.log("it is working!");
+(()=>{"use strict";!function(){const e=document.getElementById("content"),t=document.createElement("h1");t.textContent="The Blue Meal!",e.appendChild(t);const n=document.createElement("img");e.appendChild(n);const o=document.createElement("p");o.textContent="Where we create a food experience around our favorite color: Blue! So sit down and relax and enjoy our delicious food!",e.appendChild(o)}()})();
