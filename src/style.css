@@ -1,0 +1,13 @@
+.tab1 {
+    text-align: center;
+    background-color: rgb(188, 229, 245);
+    width: 80%;
+    margin-left: 10%;
+}
+
+.menuspecial {
+    border: 1px dashed black;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
