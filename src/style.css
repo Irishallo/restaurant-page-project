@@ -5,6 +5,20 @@
     margin-left: 10%;
 }
 
+.tab2 {
+    text-align: center;
+    background-color: rgb(123, 209, 243);
+    width: 80%;
+    margin-left: 10%;
+}
+
+.tab3 {
+    text-align: center;
+    background-color: rgb(65, 197, 250);
+    width: 80%;
+    margin-left: 10%;
+}
+
 .menuspecial {
     border: 1px dashed black;
     width: 60%;
@@ -13,9 +27,22 @@
 }
 
 .nav {
-    background-color: blanchedalmond;
     width: 80%;
     margin-left: 10%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0%;
+}
+
+.tabs {
+    background-color: rgb(230, 142, 142);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-basis: 33%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#content {
+    margin-top: 0%;
 }
