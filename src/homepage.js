@@ -49,36 +49,37 @@ export function createHomepage () {
     const homeText9 = document.createElement('p');
     homeText9.textContent = 'Sunday: pasta with blue sauce';
 
-    if(days[d.getDay()] == "Monday") {
-        homeText3.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Tuesday") {
-        homeText4.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Wednesday") {
-        homeText5.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Thurday") {
-        homeText6.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Friday") {
-        homeText7.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Saturday") {
-        homeText8.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Sunday") {
-        homeText9.style.fontWeight = "bold";
-    } else {
-        return
-    }
-
     homePge.appendChild(homeHeading);
     homePge.appendChild(homeText);
     homePge.appendChild(homeImage);
     homeTextcon.appendChild(daySpecialT);
     homeTextcon.appendChild(homeText2);
-    homeTextcon.appendChild(homeText3);
-    homeTextcon.appendChild(homeText4);
-    homeTextcon.appendChild(homeText5);
-    homeTextcon.appendChild(homeText6);
-    homeTextcon.appendChild(homeText7);
-    homeTextcon.appendChild(homeText8);
-    homeTextcon.appendChild(homeText9);
+    
+    if(days[d.getDay()] == "Monday") {
+        homeText3.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText3);
+    } else if(days[d.getDay()] == "Tuesday") {
+        homeText4.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText4);
+    } else if(days[d.getDay()] == "Wednesday") {
+        homeText5.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText5);
+    } else if(days[d.getDay()] == "Thurday") {
+        homeText6.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText6);
+    } else if(days[d.getDay()] == "Friday") {
+        homeText7.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText7);
+    } else if(days[d.getDay()] == "Saturday") {
+        homeText8.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText8);
+    } else if(days[d.getDay()] == "Sunday") {
+        homeText9.style.fontWeight = "bold";
+        homeTextcon.appendChild(homeText9);
+    } else {
+        return
+    }
+    
     homePge.appendChild(homeTextcon);
 
     contentDiv.appendChild(homePge);

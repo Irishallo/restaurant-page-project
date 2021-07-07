@@ -15,7 +15,7 @@ export function createMenupage () {
     menuSpecial.classList.add('menuspecial');
 
     const daySpecialT = document.createElement('h2');
-    daySpecialT.innerHTML = `Try ${days[d.getDay()]}'s Special`
+    daySpecialT.innerHTML = `Try Todays Special!`
 
     const menuSpecialText = document.createElement('p');
     menuSpecialText.textContent = 'try our meal of the day! Each day of the week a different special meal. See our menu for more details';
@@ -41,7 +41,23 @@ export function createMenupage () {
     const meSpText7 = document.createElement('p');
     meSpText7.textContent = 'Sunday: pasta with blue sauce';
 
-    
+    if(days[d.getDay()] == "Monday") {
+        meSpText1.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Tuesday") {
+        meSpText2.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Wednesday") {
+        meSpText3.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Thurday") {
+        meSpText4.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Friday") {
+        meSpText5.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Saturday") {
+        meSpText6.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Sunday") {
+        meSpText7.style.fontWeight = "bold";
+    } else {
+        return
+    }
 
     menuPge.appendChild(menuHeading);
     menuSpecial.appendChild(daySpecialT);
