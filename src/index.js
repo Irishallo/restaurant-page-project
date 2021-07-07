@@ -7,7 +7,7 @@ const containerDiv = document.getElementById("container");
 const contentDiv = document.getElementById('content');
 
 const nameHeading = document.createElement('h1');
-nameHeading.textContent = "The Blue Meal!";
+nameHeading.textContent = "The Blue Forest!";
 
 const navBar = document.createElement('div');
 navBar.classList.add('nav');
@@ -15,14 +15,17 @@ navBar.classList.add('nav');
 const homeBtn = document.createElement('div');
 homeBtn.innerText = "Home";
 homeBtn.classList.add('tabs');
+homeBtn.setAttribute('id', 'btntab1');
 
 const menuBtn = document.createElement('div');
 menuBtn.innerText = "Menu";
 menuBtn.classList.add('tabs');
+menuBtn.setAttribute('id', 'btntab2');
 
 const contactBtn = document.createElement('div');
 contactBtn.innerText = "Contact";
 contactBtn.classList.add('tabs');
+contactBtn.setAttribute('id', 'btntab3');
 
 
 navBar.appendChild(homeBtn);

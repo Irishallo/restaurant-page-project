@@ -11,7 +11,7 @@ export function createHomepage () {
     homePge.setAttribute('id', 'homepage');
 
     const homeHeading = document.createElement('h2');
-    homeHeading.textContent = "Welcome to: The Blue Meal!";
+    homeHeading.textContent = "Welcome to: The Blue Forest!";
 
     const homeText = document.createElement('p');
     homeText.textContent = "Where we create a food experience around our favorite color: Blue! So sit down and relax and enjoy our delicious food!";
@@ -49,7 +49,23 @@ export function createHomepage () {
     const homeText9 = document.createElement('p');
     homeText9.textContent = 'Sunday: pasta with blue sauce';
 
-    
+    if(days[d.getDay()] == "Monday") {
+        homeText3.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Tuesday") {
+        homeText4.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Wednesday") {
+        homeText5.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Thurday") {
+        homeText6.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Friday") {
+        homeText7.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Saturday") {
+        homeText8.style.fontWeight = "bold";
+    } else if(days[d.getDay()] == "Sunday") {
+        homeText9.style.fontWeight = "bold";
+    } else {
+        return
+    }
 
     homePge.appendChild(homeHeading);
     homePge.appendChild(homeText);
