@@ -55,34 +55,36 @@ export function createHomepage () {
     homeTextcon.appendChild(daySpecialT);
     homeTextcon.appendChild(homeText2);
     
-    if(days[d.getDay()] == "Monday") {
+    if(d.getDay() == 1) {
         homeText3.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText3);
-    } else if(days[d.getDay()] == "Tuesday") {
+    } else if(d.getDay() == 2) {
         homeText4.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText4);
-    } else if(days[d.getDay()] == "Wednesday") {
+    } else if(d.getDay() == 3) {
         homeText5.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText5);
-    } else if(days[d.getDay()] == "Thurday") {
+    } else if(d.getDay() == 4) {
         homeText6.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText6);
-    } else if(days[d.getDay()] == "Friday") {
+    } else if(d.getDay() == 5) {
         homeText7.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText7);
-    } else if(days[d.getDay()] == "Saturday") {
+    } else if(d.getDay() == 6) {
         homeText8.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText8);
-    } else if(days[d.getDay()] == "Sunday") {
+    } else if(d.getDay() == 0) {
         homeText9.style.fontWeight = "bold";
         homeTextcon.appendChild(homeText9);
     } else {
-        return
+        console.log("cannot find day, homepage");
     }
     
     homePge.appendChild(homeTextcon);
 
     contentDiv.appendChild(homePge);
+
+    console.log('homepage is here?!');
 }
 
 

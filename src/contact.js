@@ -11,6 +11,8 @@ export function createContactpage () {
     contactPge.appendChild(homeHeading);
 
     contentDiv.appendChild(contactPge);
+
+    console.log('contactpage is here?!');
 }
 
 

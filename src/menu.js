@@ -41,22 +41,22 @@ export function createMenupage () {
     const meSpText7 = document.createElement('p');
     meSpText7.textContent = 'Sunday: pasta with blue sauce';
 
-    if(days[d.getDay()] == "Monday") {
+    if(d.getDay() == 1) {
         meSpText1.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Tuesday") {
+    } else if(d.getDay() == 2) {
         meSpText2.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Wednesday") {
+    } else if(d.getDay() == 3) {
         meSpText3.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Thurday") {
+    } else if(d.getDay() == 4) {
         meSpText4.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Friday") {
+    } else if(d.getDay() == 5) {
         meSpText5.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Saturday") {
+    } else if(d.getDay() == 6) {
         meSpText6.style.fontWeight = "bold";
-    } else if(days[d.getDay()] == "Sunday") {
+    } else if(d.getDay() == 0) {
         meSpText7.style.fontWeight = "bold";
-    } else {
-        return
+    } else { 
+        console.log("cannot find day, menu");
     }
 
     menuPge.appendChild(menuHeading);
@@ -72,4 +72,6 @@ export function createMenupage () {
     menuPge.appendChild(menuSpecial);
 
     contentDiv.appendChild(menuPge);
+
+    console.log('menupage is here?!');
 }

@@ -34,8 +34,6 @@ navBar.appendChild(contactBtn);
 containerDiv.insertBefore(nameHeading, contentDiv);
 containerDiv.insertBefore(navBar, contentDiv);
 
-createHomepage();
-
 function removeContent () {
     const homeScreen = document.getElementById('homepage');
     const menuScreen = document.getElementById('menupage');
@@ -52,15 +50,20 @@ function removeContent () {
     }
 }
 
+createHomepage();
+
 homeBtn.addEventListener('click', () => {
     removeContent();
-    createHomepage(); });
+    createHomepage();
+    console.log("home button clicked") });
 menuBtn.addEventListener('click', () => {
     removeContent();
-    createMenupage(); });
+    createMenupage();
+    console.log("menu button clicked") });
 contactBtn.addEventListener('click', () => {
     removeContent();
-    createContactpage(); });
+    createContactpage(); 
+    console.log("contact button clicked")});
 
 
 
