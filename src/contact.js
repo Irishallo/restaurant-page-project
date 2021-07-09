@@ -1,5 +1,6 @@
 export function createContactpage () {
     const d = new Date();
+    const today = new Date().toISOString().split("T")[0];
 
     const contentDiv = document.getElementById("content");
 
@@ -15,7 +16,7 @@ export function createContactpage () {
     const contactSpecial = document.createElement('div');
     contactSpecial.classList.add('openinghours');
 
-    const openingTimes = document.createElement('h2');
+    const openingTimes = document.createElement('h3');
     openingTimes.innerHTML = `Opening hours`;
 
     const openSpecial = document.createElement('div');
@@ -72,9 +73,31 @@ export function createContactpage () {
     contactSpecial.appendChild(openSpecial);
     contactPge.appendChild(contactSpecial);
 
+    const contactForm = document.createElement('form');
+
+    const dateLabel = document.createElement('label');
+    dateLabel.innerText = 'choose date';
+    const dateSelector = document.createElement('input');
+    dateSelector.setAttribute('type', 'date');
+    dateSelector.setAttribute('min', `${today}`);
+    dateSelector.required = true;
+
+    const emailLabel = document.createElement('label');
+    emailLabel.innerText = 'email-adress';
+    const emailInput = document.createElement('input');
+    emailInput.setAttribute('type', 'email');
+    emailInput.required = true;
+
+    contactForm.appendChild(dateLabel);
+    contactForm.appendChild(dateSelector);
+    contactForm.appendChild(emailLabel);
+    contactForm.appendChild(emailInput);
+    contactPge.appendChild(contactForm);
+
     contentDiv.appendChild(contactPge);
 
     console.log('contactpage is here?!');
+    console.log(today);
 }
 
 

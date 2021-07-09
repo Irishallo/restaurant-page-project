@@ -22,7 +22,7 @@ export function createHomepage () {
     const homeTextcon = document.createElement('div');
     homeTextcon.classList.add('menuspecial');
 
-    const daySpecialT = document.createElement('h2');
+    const daySpecialT = document.createElement('h3');
     daySpecialT.innerHTML = `Try ${days[d.getDay()]}'s Special`
 
     const homeText2 = document.createElement('p');

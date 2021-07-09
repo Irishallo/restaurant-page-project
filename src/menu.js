@@ -14,7 +14,7 @@ export function createMenupage () {
     const menuSpecial = document.createElement('div');
     menuSpecial.classList.add('menuspecial');
 
-    const daySpecialT = document.createElement('h2');
+    const daySpecialT = document.createElement('h3');
     daySpecialT.innerHTML = `Try Todays Special!`
 
     const menuSpecialText = document.createElement('p');

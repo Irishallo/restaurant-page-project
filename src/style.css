@@ -6,7 +6,24 @@
 h1 {
     text-align: center;
     margin: 20px;
+    color: rgb(4, 73, 85);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 15px;
     color: rgb(5, 44, 78);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(5, 44, 78);
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 .tab1 {
@@ -35,7 +52,7 @@ h1 {
     width: 60%;
     margin-left: 20%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .openinghours {
@@ -92,4 +109,9 @@ h1 {
 
 #content {
     margin-top: 0%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: 20px;
 }
