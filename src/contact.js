@@ -75,23 +75,71 @@ export function createContactpage () {
 
     const contactForm = document.createElement('form');
 
+    const lineBr = document.createElement('br');
+
     const dateLabel = document.createElement('label');
-    dateLabel.innerText = 'choose date';
+    dateLabel.innerText = 'choose date: ';
     const dateSelector = document.createElement('input');
     dateSelector.setAttribute('type', 'date');
     dateSelector.setAttribute('min', `${today}`);
     dateSelector.required = true;
 
+    const timeLabel = document.createElement('label');
+    timeLabel.innerText = 'choose Time: ';
+    timeLabel.setAttribute('for', 'timechoice');
+    const timeInput = document.createElement('select');
+    timeInput.setAttribute('id', 'timechoice');
+    timeInput.setAttribute('name', 'timechoice');
+    timeInput.required = true;
+    const timeoption1 = document.createElement('option');
+    timeoption1.innerText = '20:00';
+    timeoption1.setAttribute('value', '20:00');
+    const timeoption2 = document.createElement('option');
+    timeoption2.innerText = '20:30';
+    timeoption2.setAttribute('value', '20:30');
+    const timeoption3 = document.createElement('option');
+    timeoption3.innerText = '21:00';
+    timeoption3.setAttribute('value', '21:00');
+    const timeoption4 = document.createElement('option');
+    timeoption4.innerText = '21:30';
+    timeoption4.setAttribute('value', '21:30');
+
+    timeInput.appendChild(timeoption1);
+    timeInput.appendChild(timeoption2);
+    timeInput.appendChild(timeoption3);
+    timeInput.appendChild(timeoption4);
+
     const emailLabel = document.createElement('label');
-    emailLabel.innerText = 'email-adress';
+    emailLabel.innerText = 'email-adress: ';
     const emailInput = document.createElement('input');
     emailInput.setAttribute('type', 'email');
     emailInput.required = true;
 
+    const telLabel = document.createElement('label');
+    telLabel.innerText = 'phone number: ';
+    const telInput = document.createElement('input');
+    telInput.setAttribute('type', 'tel');
+    telInput.setAttribute('pattern', '[0-9]{10}');
+    telInput.required = true;
+
+    const submitInput = document.createElement('input');
+    submitInput.setAttribute('type', 'submit');
+    submitInput.innerText = 'Submit';
+
     contactForm.appendChild(dateLabel);
     contactForm.appendChild(dateSelector);
+    contactForm.appendChild(lineBr);
+    contactForm.appendChild(timeLabel);
+    contactForm.appendChild(timeInput);
+    contactForm.appendChild(lineBr.cloneNode());
     contactForm.appendChild(emailLabel);
     contactForm.appendChild(emailInput);
+    contactForm.appendChild(lineBr.cloneNode());
+    contactForm.appendChild(telLabel);
+    contactForm.appendChild(telInput);
+    contactForm.appendChild(lineBr.cloneNode());
+    contactForm.appendChild(submitInput);
+    contactForm.appendChild(lineBr.cloneNode());
     contactPge.appendChild(contactForm);
 
     contentDiv.appendChild(contactPge);
