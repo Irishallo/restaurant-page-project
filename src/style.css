@@ -119,5 +119,13 @@ p {
 
 form {
     background-color: rgba(255, 255, 255, 0.753);
-    margin: 20px;
+    width: 60%;
+    margin: 20px 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
 }
