@@ -1,0 +1,145 @@
+* {
+    margin:0;
+    padding: 0;
+    }
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: rgb(4, 73, 85);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    color: rgb(5, 44, 78);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(5, 44, 78);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.tab1 {
+    text-align: center;
+    background-color: #acecf6;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.tab2 {
+    text-align: center;
+    background-color: #a3e1d8;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.tab3 {
+    text-align: center;
+    background-color: #9ad5b9;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.menuspecial {
+    border: 1px dashed black;
+    width: 60%;
+    margin-left: calc(20% - 20px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.openinghours {
+    border: 1px dashed black;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0%;
+}
+
+.tabs {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-basis: 33%;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox*/
+}
+
+#btntab1 {
+    background-color: #acecf6;
+}
+
+#btntab2 {
+    background-color: #a3e1d8;
+}
+
+#btntab3 {
+    background-color: #9ad5b9;
+}
+
+#btntab1:hover {
+    background-color: #89ccd6;
+}
+
+#btntab2:hover {
+    background-color: #7ac2b7;
+}
+
+#btntab3:hover {
+    background-color: rgb(94, 170, 159);
+}
+
+#content {
+    margin-top: 0%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.753);
+    width: 60%;
+    margin: 20px 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+select {
+    display: inline;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+.timeform {
+    display: inline;
+}
+
+.menulist {
+    padding: 10px;
+}
