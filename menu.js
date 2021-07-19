@@ -70,12 +70,41 @@ export function createMenupage () {
 
     const preHeading = document.createElement('h3');
     preHeading.innerText = 'Appetizers';
+
+    const prefood1 = document.createElement('p');
+    prefood1.innerText = 'Carrot Soup';
+    const prefood2 = document.createElement('p');
+    prefood2.innerText = 'Summer Rolls';
+    const prefood3 = document.createElement('p');
+    prefood3.innerText = 'Homemade Bread with Aioli';
+
     const mainHeading = document.createElement('h3');
     mainHeading.innerText = 'Main Course';
+    const mainfood1 = document.createElement('p');
+    mainfood1.innerText = 'Lasagne with Spinach';
+    const mainfood2 = document.createElement('p');
+    mainfood2.innerText = 'Pizza with Pesto, Paprika, and Mushrooms';
+    const mainfood3 = document.createElement('p');
+    mainfood3.innerText = 'Vegetarian Wellington';
+
     const dessertHeading = document.createElement('h3');
     dessertHeading.innerText = 'Cakes and desserts';
+    const dessertfood1 = document.createElement('p');
+    dessertfood1.innerText = 'Chocolat Cake';
+    const dessertfood2 = document.createElement('p');
+    dessertfood2.innerText = 'Raspberry and Mango Ice Cream';
+    const dessertfood3 = document.createElement('p');
+    dessertfood3.innerText = 'Apple Pie';
+
     const drinksHeading = document.createElement('h3');
     drinksHeading.innerText = 'Drinks';
+    const drinksfood1 = document.createElement('p');
+    drinksfood1.innerText = 'Coffee';
+    const drinksfood2 = document.createElement('p');
+    drinksfood2.innerText = 'Lemonade';
+    const drinksfood3 = document.createElement('p');
+    drinksfood3.innerText = 'Smoothie';
+    
 
     menuPge.appendChild(menuHeading);
     menuSpecial.appendChild(daySpecialT);
@@ -89,12 +118,24 @@ export function createMenupage () {
     menuSpecial.appendChild(meSpText7);
     menuPge.appendChild(menuSpecial);
     preMenu.appendChild(preHeading);
+    preMenu.appendChild(prefood1);
+    preMenu.appendChild(prefood2);
+    preMenu.appendChild(prefood3);
     menuPge.appendChild(preMenu);
     mainMenu.appendChild(mainHeading);
+    mainMenu.appendChild(mainfood1);
+    mainMenu.appendChild(mainfood2);
+    mainMenu.appendChild(mainfood3);
     menuPge.appendChild(mainMenu);
     dessertMenu.appendChild(dessertHeading);
+    dessertMenu.appendChild(dessertfood1);
+    dessertMenu.appendChild(dessertfood2);
+    dessertMenu.appendChild(dessertfood3);
     menuPge.appendChild(dessertMenu);
     drinksMenu.appendChild(drinksHeading);
+    drinksMenu.appendChild(drinksfood1);
+    drinksMenu.appendChild(drinksfood2);
+    drinksMenu.appendChild(drinksfood3);
     menuPge.appendChild(drinksMenu);
 
     contentDiv.appendChild(menuPge);
