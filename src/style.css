@@ -111,8 +111,6 @@ p {
     background-color: rgb(94, 170, 159);
 }
 
-
-
 #content {
     margin-top: 0%;
 }
@@ -128,4 +126,20 @@ form {
 td {
     padding: 5px;
     text-align: left;
+}
+
+select {
+    display: inline;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+.timeform {
+    display: inline;
+}
+
+.menulist {
+    padding: 10px;
 }
